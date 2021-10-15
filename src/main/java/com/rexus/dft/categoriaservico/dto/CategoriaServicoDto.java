@@ -4,39 +4,45 @@ import com.rexus.dft.enums.TipoMetodologiaEnum;
 
 public class CategoriaServicoDto {
 
-    private Long id;
-    private String descricao;
-    private TipoMetodologiaEnum tipo;
+	private Long id;
+	private String descricao;
+	private TipoMetodologiaEnum tipo;
 
-    public CategoriaServicoDto() {}
+	public CategoriaServicoDto() {
+	}
 
-    public CategoriaServicoDto(String descricao, TipoMetodologiaEnum tipo) {
-        this.descricao = descricao;
-        this.tipo = tipo;
-    }
+	public CategoriaServicoDto(String descricao, TipoMetodologiaEnum tipo) {
+		this.descricao = descricao;
+		this.tipo = tipo;
+	}
 
-    public Long getId() {
-	return id;
-    }
+	public CategoriaServicoDto(Long id, String descricao, TipoMetodologiaEnum tipo) {
+		this.id = id;
+		this.descricao = descricao;
+		this.tipo = tipo;
+	}
 
-    public void setId(Long id) {
-	this.id = id;
-    }
+	public Long getId() {
+		return id;
+	}
 
-    public String getDescricao() {
-	return descricao;
-    }
+	public void setId(Long id) {
+		this.id = id;
+	}
 
-    public void setDescricao(String descricao) {
-	this.descricao = descricao;
-    }
+	public String getDescricao() {
+		return descricao;
+	}
 
-    public TipoMetodologiaEnum getTipo() {
-	    return tipo;
-    }
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
 
-    public void setTipo(TipoMetodologiaEnum tipo) {
-	this.tipo = tipo;
-    }
+	public TipoMetodologiaEnum getTipo() {
+		return tipo;
+	}
 
+	public void setTipo(TipoMetodologiaEnum tipo) {
+		this.tipo = tipo;
+	}
 }
